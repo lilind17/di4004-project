@@ -1,0 +1,351 @@
+/*  General  */
+body {
+    background: #f2f2f2;
+    margin: 0px;
+    font-family: Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+     color:#0067ab;
+     text-decoration:none;
+}
+
+a:hover {
+     text-decoration:underline;
+}
+
+input[type='text'], input[type='email'],
+input[type='password'] {
+     width: 200px;
+     border-radius: 2px;
+     border: 1px solid #CCC;
+     padding: 10px;
+     color: #333;
+     font-size: 14px;
+     margin-top: 10px;
+     background-color: white;
+}
+
+input[type='submit'] {
+     text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+     font-size: 13px;
+     box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
+     border-radius: 2px;
+     margin-top: 15px;
+     background-color: #4CAF50;
+     color: white;
+     padding: 12px 20px;
+     border: none;
+     cursor: pointer;
+}
+
+input[type='submit']:hover {
+     background-color: #45a049;
+}
+
+
+.cancel-button {
+    background-color: #45a049;
+    text-shadow: rgba(0,0,0,0.24) 0 1px 0;
+    font-size: 13px;
+    box-shadow: rgba(255,255,255,0.24) 0 2px 0 0 inset,#fff 0 1px 0 0;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+}
+
+.cancel-button:hover {
+     background-color: #45a049;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+/*  Navigation */
+.topnav {
+    background-color: #000066;
+    overflow: hidden;
+    width: 100%
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover, .nav_dropdown:hover .dropbtn {
+    background-color: #ddd;
+    color: black;
+    z-index: 10;
+}
+
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#nav-left {
+    float: left;
+}
+
+#nav-right {
+    float: right;
+}
+
+/* The nav_dropdown container */
+.nav_dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* nav_dropdown button */
+.nav_dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+  z-index: 10;
+}
+
+/* nav_dropdown content (hidden by default) */
+.nav_dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Links inside the nav_dropdown */
+.nav_dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to nav_dropdown links on hover */
+.nav_dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the nav_dropdown menu on hover */
+.nav_dropdown:hover .nav_dropdown-content {
+  display: block;
+}
+
+/*  Form    */
+.clearfix:before, .clearfix:after{
+     content: "";
+     display: table;
+}
+.clearfix:after{
+     clear: both;
+}
+
+/*  Contact form    */
+/* Style inputs */
+.contact_column input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Style the container/contact section */
+.contact_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Use to position "blocks" */
+.contact_column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.contact_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Login form */
+.login_column input[type=text], input[type=password], input[type=submit]  {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+/* Style the container/contact section */
+.login_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.login_column {
+    width: 20%;
+    margin-top: 6px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Clear floats after the columns */
+.login_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Register form */
+.register_column input[type=email], input[type=text], input[type=password], input[type=submit]  {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+.register_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.register_column {
+    width: 20%;
+    margin-top: 6px;
+    padding: 20px;
+    margin: auto;
+}
+
+.register_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Submit.php */
+.submit_column input[type=text], input[type=number], textarea, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    resize: vertical;
+    background: white;
+    color: black;
+}
+
+.submit_container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    #background: red;
+    padding: 6px;
+}
+
+.submit_column {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+    padding: 10px;
+    #background: green;
+}
+
+.submit_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Bootstrap 4 card */
+.card_title {
+    margin-top: 15px;
+    text-align:center;
+}
+
+.card {
+    width: auto;
+}
+
+/* Shadow effects */
+div.card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+
+input:hover {
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.02);
+}
+input:focus {
+  color: #4b515d;
+  border: 1px solid #B8B6B6;
+  box-shadow: inset 1px 2px 4px rgba(0, 0, 0, 0.01), 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  background: #fff;
+  color: #525865;
+  border-radius: 4px;
+  border: 1px solid #d1d1d1;
+  box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1.45;
+  outline: none;
+  padding: 0.6em 1.45em 0.7em;
+  -webkit-transition: .18s ease-out;
+  -moz-transition: .18s ease-out;
+  -o-transition: .18s ease-out;
+  transition: .18s ease-out;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .contact_column, .login_column, .register_column, .submit_column, .cancel-button , input[type=submit], input[type=reset] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
